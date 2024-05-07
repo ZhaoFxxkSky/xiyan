@@ -1,0 +1,10 @@
+{
+  "name": "@config/tsconfig",
+  "version": "1.0.0",
+  "description": "typescript configuration files",
+  "private": true,
+  "files": [
+    "base.json",
+    "server.json"
+  ]
+}
