@@ -1,0 +1,12 @@
+{
+  "name": "@xiyan/types",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "devDependencies": {
+    "vue": "^3.4.26",
+    "vue-router": "4.3.2",
+    "pinia": "2.1.7"
+  }
+}

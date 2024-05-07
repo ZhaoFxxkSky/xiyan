@@ -1,0 +1,7 @@
+{
+  "name": "@xiyan/styles",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts"
+}

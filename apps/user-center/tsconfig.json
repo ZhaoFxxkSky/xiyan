@@ -1,0 +1,31 @@
+{
+  "extends": "@config/tsconfig/base.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "#/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "mock",
+    "vite.config.ts"
+  ]
+}

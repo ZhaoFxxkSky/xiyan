@@ -1,0 +1,14 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules dist .turbo"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "vue-router": "4.3.2"
+  }
+}

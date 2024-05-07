@@ -1,0 +1,20 @@
+{
+  "name": "@xiyan/router",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules dist .turbo"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0",
+    "@xiyan/components": "workspace:*",
+    "vue": "^3.4.26",
+    "vue-router": "4.3.2"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.3",
+    "naive-ui": "^2.38.2"
+  }
+}
