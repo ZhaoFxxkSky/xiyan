@@ -10,6 +10,5 @@
   "peerDependencies": {
     "naive-ui": "^2.38.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "rollup": "^4.17.2",
-    "vue": "^3.4.26"
+    "vue": "^3.4.26",
+    "@xiyan/types": "workspace:*"
   }
 }

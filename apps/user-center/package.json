@@ -13,6 +13,9 @@
   "dependencies": {
     "@xiyan/router": "workspace:*",
     "@xiyan/styles": "workspace:*",
+    "@xiyan/layouts": "workspace:*",
+    "@xiyan/hooks": "workspace:*",
+    "@xiyan/stores": "workspace:*",
     "naive-ui": "^2.38.2",
     "vue": "^3.4.21"
   },

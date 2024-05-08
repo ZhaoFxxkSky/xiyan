@@ -1,0 +1,18 @@
+{
+  "name": "@xiyan/stores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules dist .turbo"
+  },
+  "dependencies": {
+    "@xiyan/utils": "workspace:*",
+    "pinia": "2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@xiyan/types": "workspace:*"
+  }
+}

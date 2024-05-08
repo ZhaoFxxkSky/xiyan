@@ -6,4 +6,4 @@ module.exports = {
     'pnpm prettier --write',
   ],
   '*.{scss,less,styl,html}': ['pnpm stylelint --fix', 'pnpm prettier --write'],
-}
+};
