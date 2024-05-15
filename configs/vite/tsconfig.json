@@ -1,5 +1,8 @@
 {
   "extends": "@config/tsconfig/base.json",
-  "include": ["src"],
-  "exclude": ["dist", "node_modules"]
+  "include": ["src", "@xiyan/types/shims/global"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "types": ["@xiyan/types/shims/global"]
+  }
 }

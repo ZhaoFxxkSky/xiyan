@@ -1,0 +1,10 @@
+{
+  "name": "@xiyan/constants",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules dist .turbo"
+  }
+}

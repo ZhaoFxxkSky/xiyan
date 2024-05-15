@@ -1,4 +1,10 @@
+// vue
+import type { PropType as VuePropType, VNodeChild } from 'vue';
+
 declare global {
+  type PropType<T> = VuePropType<T>;
+  type VueNode = VNodeChild | JSX.Element;
+
   type AnyFunction<T> = (...args: any[]) => T;
   type PartialReturnType<T extends (...args: unknown[]) => unknown> = Partial<
     ReturnType<T>
@@ -16,6 +22,9 @@ declare global {
   }
 
   interface ViteEnv {
+    VITE_GLOB_APP_SHORT_NAME: string;
+    VITE_PUBLIC_PATH: string;
+    VITE_DROP_CONSOLE: boolean;
     VITE_ICON_PREFIX: string;
     VITE_ICON_LOCAL_PREFIX: string;
   }

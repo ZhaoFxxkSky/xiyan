@@ -64,7 +64,8 @@ module.exports = {
       ],
       { severity: 'warning' },
     ],
-    'order/properties-order': [ // 规则顺序
+    'order/properties-order': [
+      // 规则顺序
       'position',
       'content',
       'top',
@@ -172,4 +173,4 @@ module.exports = {
       ],
     },
   ],
-}
+};

@@ -11,14 +11,21 @@
     "type:check": "vue-tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
+    "@xiyan/hooks": "workspace:*",
+    "@xiyan/layouts": "workspace:*",
     "@xiyan/router": "workspace:*",
+    "@xiyan/stores": "workspace:*",
+    "@xiyan/components": "workspace:*",
     "@xiyan/styles": "workspace:*",
-    "naive-ui": "^2.38.2",
-    "vue": "^3.4.21"
+    "@xiyan/utils": "workspace:*",
+    "vue": "^3.4.27",
+    "vue-router": "4.3.2"
   },
   "devDependencies": {
     "@config/vite": "workspace:*",
-    "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "naive-ui": "^2.38.2",
+    "vite": "5.2.11",
+    "vue-tsc": "^2.0.6",
+    "@iconify/json": "^2.2.207"
   }
 }

@@ -10,6 +10,10 @@
   "peerDependencies": {
     "naive-ui": "^2.38.2"
   },
+  "devDependencies": {
+    "@xiyan/types": "workspace:*"
+  },
   "dependencies": {
+    "vue": "^3.4.27"
   }
 }

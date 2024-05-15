@@ -1,12 +1,13 @@
 {
-  "name": "user-center",
+  "name": "xiyan",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": " vite build",
-    "preview": "vite preview",
-    "type:check": "vue-tsc --noEmit --skipLibCheck"
+    "clean": "pnpm turbo run clean && rimraf node_modules",
+    "type:check": "vue-tsc --noEmit --skipLibCheck",
+    "lint:eslint": "eslint . -c eslint.cjs --cache --max-warnings 0 --fix",
+    "lint:prettier": "prettier --write  \"{packages,apps,configs,scripts}/**/*.{js,json,ts,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix "
   },
   "devDependencies": {
     "@config/lint": "workspace:*",
@@ -16,5 +17,6 @@
     "turbo": "^1.13.3",
     "typescript": "^5.3.3",
     "unbuild": "^2.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.1"
 }

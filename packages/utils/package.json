@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@xiyan/utils",
   "version": "1.0.0",
   "type": "module",
   "main": "index.ts",
@@ -7,7 +7,12 @@
   "scripts": {
     "clean": "pnpm rimraf node_modules dist .turbo"
   },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "lodash-es": "^4.17.21"
+  },
   "devDependencies": {
+    "@xiyan/types": "workspace:*",
     "@types/lodash-es": "^4.17.12",
     "vue-router": "4.3.2"
   }
