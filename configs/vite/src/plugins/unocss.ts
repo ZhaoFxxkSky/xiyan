@@ -5,17 +5,17 @@ import presetUno from '@unocss/preset-uno';
 import { createUnocssPreset } from '../presets';
 import * as path from 'node:path';
 import presetIcons from '@unocss/preset-icons';
-import { FileSystemIconLoader } from 'unplugin-icons/loaders';
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 
-export function configUnocssPlugin() {
-  // const { VITE_ICON_PREFIX, VITE_ICON_LOCAL_PREFIX } = viteEnv;
+export function configUnocssPlugin(viteEnv: ViteEnv) {
+  const { VITE_ICON_PREFIX, VITE_ICON_LOCAL_PREFIX } = viteEnv;
 
   const localIconPath = path.join(process.cwd(), 'src/assets/svg-icon');
 
-  // const collectionName = VITE_ICON_LOCAL_PREFIX.replace(
-  //   `${VITE_ICON_PREFIX}-`,
-  //   '',
-  // );
+  const collectionName = VITE_ICON_LOCAL_PREFIX.replace(
+    `${VITE_ICON_PREFIX}-`,
+    '',
+  );
 
   return Unocss({
     content: {
@@ -26,19 +26,19 @@ export function configUnocssPlugin() {
     presets: [
       presetUno({ dark: 'class' }),
       createUnocssPreset(),
-      // presetIcons({
-      //   prefix: `${VITE_ICON_PREFIX}-`,
-      //   scale: 1,
-      //   extraProperties: {
-      //     display: 'inline-block',
-      //   },
-      //   collections: {
-      //     [collectionName]: FileSystemIconLoader(localIconPath, (svg) =>
-      //       svg.replace(/^<svg\s/, '<svg width="1em" height="1em" '),
-      //     ),
-      //   },
-      //   warn: true,
-      // }),
+      presetIcons({
+        prefix: `${VITE_ICON_PREFIX}-`,
+        scale: 1,
+        extraProperties: {
+          display: 'inline-block',
+        },
+          collections: {
+            [collectionName]: FileSystemIconLoader(localIconPath, (svg) =>
+              svg.replace(/^<svg\s/, '<svg width="1em" height="1em" '),
+            ),
+          },
+        warn: true,
+      }),
     ],
     transformers: [transformerDirectives(), transformerVariantGroup()],
   });

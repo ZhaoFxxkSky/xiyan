@@ -1,15 +1,10 @@
 {
-  "name": "@xiyan/types",
+  "name": "@xiyan/constants",
   "version": "1.0.0",
   "type": "module",
   "main": "index.ts",
   "module": "index.ts",
   "scripts": {
     "clean": "pnpm rimraf node_modules dist .turbo"
-  },
-  "devDependencies": {
-    "vue": "^3.4.27",
-    "vue-router": "4.3.2",
-    "pinia": "2.1.7"
   }
 }

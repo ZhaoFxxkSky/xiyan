@@ -8,6 +8,9 @@
     "prettier.js",
     "stylelint.js"
   ],
+  "scripts": {
+    "clean": "pnpm rimraf node_modules dist .turbo"
+  },
   "dependencies": {
     "@commitlint/cli": "^17.8.1",
     "@commitlint/config-conventional": "^17.8.1",

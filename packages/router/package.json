@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "nprogress": "^0.2.0",
+    "@xiyan/constants": "workspace:*",
     "@xiyan/components": "workspace:*",
-    "vue": "^3.4.26",
+    "vue": "^3.4.27",
     "vue-router": "4.3.2"
   },
   "devDependencies": {
